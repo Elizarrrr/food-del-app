@@ -16,7 +16,14 @@ const port = 4000;
 
 // middleware
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: [
+    "https://food-delivery-frontend-psi-six.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:5174"
+  ]
+}));
 
 // db connection
 connectDB();
