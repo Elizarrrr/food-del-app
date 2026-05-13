@@ -1,11 +1,14 @@
+import "dotenv/config";
+// import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoute.js";
-import "dotenv/config";
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
+
+// dotenv.config();
 
 // app config
 const app = express();
@@ -33,4 +36,4 @@ app.listen(port, () => {
   console.log(`Server Started on http://localhost:${port}`);
 });
 
-// mongodb+srv://lizadev:billionaire@cluster0.mha73l4.mongodb.net/?
+// console.log("MONGO URI:", process.env.MONGODB_URI);

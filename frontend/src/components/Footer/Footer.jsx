@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="" />
+          <img src={assets.olivelogo} alt="" className="logo" />
           <p>Lorem Ipsum is simply dummy text</p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2025 © Olive Bistro.com - All Rights Reserved
+        Copyright 2025 © Olive Bistro - All Rights Reserved
       </p>
     </div>
   );

@@ -1,0 +1,17 @@
+# Environment variables - NEVER commit this
+.env
+
+# Dependencies
+node_modules/
+
+# Uploads (user-uploaded images)
+# uploads/
+
+# Logs
+npm-debug.log*
+nodemon-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
