@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "https://food-delivery-frontend-psi-six.vercel.app",
+    "https://food-delivery-admin-kappa-teal.vercel.app",
     "http://localhost:5173",
     "http://localhost:5174"
   ]
